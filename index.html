@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1</title>
+    <style>
+      /* added some normal styling */
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f7f7;
+      }
+      #canvas {
+        border: 1px solid red;
+        margin-bottom: 10px;
+      }
+      #rangeValue {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" height="680px" width="1200px"></canvas>
+    <br />
+    <input type="range" min="0" max="65" id="rangeInput" value="65" />
+    <span id="rangeValue">65</span>
+
+    <script src="script.js"></script>
+  </body>
+</html>
